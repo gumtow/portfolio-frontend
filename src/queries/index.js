@@ -11,6 +11,6 @@ export const getContentfulNav = async () => {
 }
 
 export const getContentfulAboutMe = async () => {
-    const data = await contentfulClient.getEntry('5f3if9JxxQnlI7LBucdfck');
+    const data = await contentfulClient.getEntry({ entryId:'5f3if9JxxQnlI7LBucdfck', include: 3 });
     return data;
 }

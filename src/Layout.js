@@ -1,11 +1,14 @@
 import React from 'react';
-import { LayoutWrapper } from './styles/layout'
+import { FullWidthWrapper } from './styles/layout';
+import { Wrapper } from './styles/layout';
 
 const Layout = (props) => {
     return(
-        <LayoutWrapper>
-            {props.children}
-        </LayoutWrapper>
+        <FullWidthWrapper bg={props.bg}>
+            <Wrapper>
+                {props.children}
+            </Wrapper>
+        </FullWidthWrapper>
     )
 }
 
