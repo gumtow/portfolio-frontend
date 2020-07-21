@@ -59,6 +59,8 @@ export const MainBtn = styled.button`
     background:#EE6C4D;
     padding: 1rem 3rem;
     font-size: 1.5rem;
+    text-decoration:none;
+    cursor:pointer;
     border:none;
     display:flex;
     justify-content: center;

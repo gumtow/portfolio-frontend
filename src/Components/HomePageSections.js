@@ -5,6 +5,7 @@ import ProjectThumbnails from './ProjectThumbnail';
 import { GridContainer, PullQuote } from '../styles/layout';
 import { HeaderTwo } from '../styles/type';
 import { uuid } from 'uuidv4';
+// import { Link } from 'react-router-dom';
 
 const HomePageSections = () => {
     const [data, setData] = useState({});
@@ -32,6 +33,7 @@ const HomePageSections = () => {
                                     <GridContainer>
                                         {projects.map((project, i) => {
                                             return (
+                                                
                                                 <ProjectThumbnails project={project}  key={uuid()}/>
                                             )
                                         })}
