@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { getContentfulAboutMe } from '../queries/index';
 import RichText from './RichText';
 import ProjectThumbnails from './ProjectThumbnail';
-import { GridContainer, PullQuote } from '../styles/layout';
-import { HeaderTwo } from '../styles/type';
+import { GridContainer, PullQuote, NarrowWrapper, GridContainerOffset } from '../styles/layout';
+import { HeaderTwo, SkillList } from '../styles/type';
 import { uuid } from 'uuidv4';
 // import { Link } from 'react-router-dom';
 
@@ -19,22 +19,29 @@ const HomePageSections = () => {
         getData();
     }, [])
 
-    console.log(data)
+        console.log(data)
         ; if (Object.entries(data).length > 0) {
             return (
                 <main>
                     {data.fields.homePageSections.map((section, i) => {
-                        const { sectionTitle, textContent, projects } = section.fields;
+                        const { sectionTitle, textContent, projects, sideText} = section.fields;
                         return (
                             <section key={uuid()}>
-                                <HeaderTwo align color="true">{sectionTitle}</HeaderTwo>
-                                {textContent && <RichText content={textContent} />}
+                                <NarrowWrapper>
+                                    <HeaderTwo align color="true">{sectionTitle}</HeaderTwo>
+                                    <GridContainerOffset>
+                                        {textContent && <RichText content={textContent} />}
+                                        <SkillList>
+                                        {sideText && <RichText content={sideText} />}
+                                        </SkillList>
+                                    </GridContainerOffset>
+                                </NarrowWrapper>
                                 {projects &&
                                     <GridContainer>
                                         {projects.map((project, i) => {
                                             return (
-                                                
-                                                <ProjectThumbnails project={project}  key={uuid()}/>
+
+                                                <ProjectThumbnails project={project} key={uuid()} />
                                             )
                                         })}
                                     </GridContainer>
@@ -43,9 +50,11 @@ const HomePageSections = () => {
                         )
 
                     })}
-                    <PullQuote>
-                        <RichText content={data.fields.pullquote} />
-                    </PullQuote>
+                    <NarrowWrapper>
+                        <PullQuote>
+                            <RichText content={data.fields.pullquote} />
+                        </PullQuote>
+                    </NarrowWrapper>
                 </main>
             )
         }

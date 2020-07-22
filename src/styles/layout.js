@@ -8,15 +8,24 @@ export const FullWidthWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    padding: 2rem;
+    padding: 1rem;
     max-width:1200px;
     margin: 0 auto;
     @media screen and (min-width: 768px){
-        padding: 4rem;
+        padding: 2rem;
     }
 `;
 
-// grid container
+export const NarrowWrapper = styled.div `
+    max-width:1200px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px){
+        max-width:600px;
+    }
+`;
+
+
+// grid containers
 
 export const GridContainer = styled.div`
     display: grid;
@@ -24,6 +33,20 @@ export const GridContainer = styled.div`
     gap: 1rem;
     @media screen and (min-width: 768px){
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    img{
+        width:100%;
+    }
+`;
+
+export const GridContainerOffset = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @media screen and (min-width: 768px){
+        grid-template-columns: 5fr 1fr;
         gap: 1.5rem;
     }
 
@@ -40,7 +63,7 @@ export const PullQuote = styled.div`
     blockquote{
         font-size:1.5rem;
         @media screen and (min-width: 768px){
-            font-size: 3rem;
+            font-size: 2rem;
         }
         h6 {
             text-align:center;
@@ -57,8 +80,9 @@ export const MainBtn = styled.button`
     color:#fff;
     border-radius: 4rem;
     background:#EE6C4D;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    margin: 2rem;
+    font-size: 1rem;
     text-decoration:none;
     cursor:pointer;
     border:none;
@@ -75,3 +99,13 @@ export const FlexCenter = styled.div`
     align-items:"center";
 
 `;
+
+// Profile Image
+
+export const ProfileImage = styled.img `
+    max-width:75px;
+    @media screen and (min-width: 768px){
+        max-width:50px;
+    }
+`;
+
