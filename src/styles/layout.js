@@ -16,11 +16,11 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const NarrowWrapper = styled.div `
+export const NarrowWrapper = styled.div`
     max-width:1200px;
     margin: 0 auto;
     @media screen and (min-width: 768px){
-        max-width:600px;
+        max-width:900px;
     }
 `;
 
@@ -82,7 +82,7 @@ export const MainBtn = styled.button`
     background:#EE6C4D;
     padding: 0.5rem 1.5rem;
     margin: 2rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration:none;
     cursor:pointer;
     border:none;
@@ -102,7 +102,7 @@ export const FlexCenter = styled.div`
 
 // Profile Image
 
-export const ProfileImage = styled.img `
+export const ProfileImage = styled.img`
     max-width:75px;
     @media screen and (min-width: 768px){
         max-width:50px;
