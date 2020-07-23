@@ -32,7 +32,7 @@ const HomePageSections = () => {
                                     <GridContainerOffset>
                                         {textContent && <RichText content={textContent} />}
                                         <SkillList>
-                                        {sideText && <RichText content={sideText} />}
+                                            {sideText && <RichText content={sideText} />}
                                         </SkillList>
                                     </GridContainerOffset>
                                 </NarrowWrapper>

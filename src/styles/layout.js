@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FullWidthWrapper = styled.div`
-    padding: 0rem;
+    padding: 0rem ;
     margin: 0 auto;
     background: ${props => props.bg};
     background-size:cover;
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     max-width:1200px;
     margin: 0 auto;
     @media screen and (min-width: 768px){
-        padding: 2rem;
+        padding: 8rem;
     }
 `;
 
@@ -104,8 +104,10 @@ export const FlexCenter = styled.div`
 
 export const ProfileImage = styled.img`
     max-width:75px;
+    max-width:75px;
     @media screen and (min-width: 768px){
         max-width:50px;
+        max-height: 50px;
     }
 `;
 

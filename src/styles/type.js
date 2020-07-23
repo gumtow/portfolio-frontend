@@ -9,6 +9,7 @@ export const HeaderOne = styled.h1`
     display:flex;
     justify-content: center;
     align-items:"center";
+    margin-bottom: 0.25rem;
     color:#EE6C4D;
     font-size: 2rem;
     text-transform:uppercase;
@@ -25,6 +26,7 @@ export const HeaderTwo = styled.h2`
     display:flex;
     justify-content: center;
     align-items:"center";
+    margin: 0.25rem 0rem 3.5rem;
     font-size: ${props => props.larger ? "2rem" : "1.5rem"};
     color:${props => props.color ? "#293241" : "#ffffff"};
     background:none;
@@ -38,6 +40,7 @@ export const HeaderThree = styled.h3`
     max-width: 350px;
     margin: 0 auto;
     text-align:center;
+    padding: 0.25rem 0rem 2rem;
     p{
         font-family: ff-tisa-web-pro,serif;
         font-weight: 400;
