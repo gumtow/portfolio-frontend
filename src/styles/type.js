@@ -28,11 +28,11 @@ export const HeaderTwo = styled.h2`
     align-items:"center";
     margin: 0.25rem 0rem 3.5rem;
     font-size: ${props => props.larger ? "2rem" : "1.5rem"};
-    color:${props => props.color ? "#293241" : "#ffffff"};
+    color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     background:none;
     @media screen and (min-width: 768px){
         font-size: ${props => props.larger ? "2rem" : "2.5rem"};
-        color:${props => props.color ? "#293241" : "#ffffff"};
+        color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     }
 `;
 
@@ -45,6 +45,7 @@ export const HeaderThree = styled.h3`
         font-family: ff-tisa-web-pro,serif;
         font-weight: 400;
         font-style: italic;
+        color:#fff;
     }
     
     display:flex;
@@ -76,5 +77,20 @@ export const SkillList = styled.div`
             margin: 0;
         }
     }
+`;
+
+// Links
+
+export const InfoLinks = styled.div `
+    color:#fff;
+    a {
+        transition: color 0.3s;
+        padding: 0 1rem;
+    }
+    a:hover{
+        transition: color 0.3s;
+        color: #EE6C4D;
+    }
+
 `;
 

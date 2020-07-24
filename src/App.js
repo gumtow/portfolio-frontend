@@ -39,7 +39,9 @@ function App() {
               <a href={`mailto:{data.fields.email}`}><MainBtn>Get in touch</MainBtn></a>
             </FlexCenter>
             <FlexCenter>
-              <a target="_blank" rel="noopener noreferrer" href={data.fields.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.medium}>Medium</a>
+              <headings.InfoLinks>
+                <a target="_blank" rel="noopener noreferrer" href={data.fields.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.medium}>Medium</a>
+              </headings.InfoLinks>
             </FlexCenter>
           </div>
         </Layout>
@@ -52,7 +54,9 @@ function App() {
               <a href={`mailto:{data.fields.email}`}><MainBtn>Get in touch</MainBtn></a>
             </FlexCenter>
             <FlexCenter>
-              <a target="_blank" rel="noopener noreferrer" href={data.fields.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.medium}>Medium</a>
+              <headings.InfoLinks>
+                <a target="_blank" rel="noopener noreferrer" href={data.fields.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={data.fields.medium}>Medium</a>
+              </headings.InfoLinks>
             </FlexCenter>
           </footer>
         </Layout>

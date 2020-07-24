@@ -77,18 +77,23 @@ export const PullQuote = styled.div`
 // Button
 
 export const MainBtn = styled.button`
+    transition: background 0.3s;
     color:#fff;
     border-radius: 4rem;
     background:#EE6C4D;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 2rem;
     margin: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-decoration:none;
     cursor:pointer;
     border:none;
     display:flex;
     justify-content: center;
     align-items:"center";
+    :hover {
+        transition: background 0.3s;
+        background:#f1856a;
+    }
 `;
 
 // FlexCenter
