@@ -109,7 +109,7 @@ export const FlexCenter = styled.div`
 
 export const ProfileImage = styled.img`
     max-width:75px;
-    max-width:75px;
+    max-height:75px;
     @media screen and (min-width: 768px){
         max-width:50px;
         max-height: 50px;
