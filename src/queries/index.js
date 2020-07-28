@@ -5,12 +5,12 @@ export const contentfulClient = new ContentfulClient({
     space: process.env.REACT_APP_SPACE_ID
 });
 
-export const getContentfulNav = async () => {
-    const data = await contentfulClient.getEntry('4W6F1PorgiXDsgPExBP3pr');
+export const getContentfulSiteInfo = async () => {
+    const data = await contentfulClient.getEntry('2yZ6iLGUHwQ8H0PV4xf87m');
     return data;
 }
 
-export const getContentfulAboutMe = async () => {
-    const data = await contentfulClient.getEntry({ entryId:'5f3if9JxxQnlI7LBucdfck', include: 3 });
+export const getContentfulHomePage = async () => {
+    const data = await contentfulClient.getEntry({ entryId:'2IUGKYFF5r1KpHzfES62xf', include: 3 });
     return data;
 }
