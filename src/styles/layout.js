@@ -9,10 +9,10 @@ export const FullWidthWrapper = styled.div`
 
 export const Wrapper = styled.div`
     padding: 1rem;
-    max-width:1200px;
+    max-width:${props => props.maxWidth ? "100%" : "1200px"};
     margin: 0 auto;
     @media screen and (min-width: 768px){
-        padding: 8rem;
+        padding: ${props => props.maxWidth ? "0" : "8rem"};
     }
 `;
 
@@ -21,6 +21,21 @@ export const NarrowWrapper = styled.div`
     margin: 0 auto;
     @media screen and (min-width: 768px){
         max-width:900px;
+    }
+`;
+
+export const ProjectItem = styled.div `
+    background: radial-gradient( rgba(73, 88, 103, .5), rgba(193, 140, 93, .75));
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 3rem;
+    transition: all .2s ease-in-out;
+    :hover {
+        background: radial-gradient( rgba(231, 173, 153, .75), rgba(206, 121, 107, 1));
+        transform: scale(1.1);   
     }
 `;
 
