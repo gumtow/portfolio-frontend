@@ -16,8 +16,10 @@ const ShowProject = (props) => {
     }
 
     useEffect(() => {
+        // eslint-disable-next-line
         getData();
-    }, [])
+        // eslint-disable-next-line
+    }, []);
     // console.log(data);
     // console.log(props.match.params.id);
     if (data.fields) {
