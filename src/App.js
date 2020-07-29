@@ -22,7 +22,7 @@ function App() {
     getData();
   }, [])
 
-  console.log("siteInfo", data);
+  // console.log("siteInfo", data);
   if (data.fields) {
     return (
       <div>

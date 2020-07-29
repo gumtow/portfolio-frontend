@@ -23,7 +23,7 @@ const HomePage = (props) => {
     }, [])
 
     const { siteInfo } = props;
-    console.log("homepage data", data)
+    // console.log("homepage data", data)
         ; if (Object.entries(data).length > 0) {
 
             return (
@@ -78,7 +78,7 @@ const HomePage = (props) => {
                             {data.fields.contentSection[2].fields.projects.map((project, i) => {
                                 return (
 
-                                    <ProjectThumbnails project={project} key={uuid()} />
+                                    <ProjectThumbnails {...props} project={project} key={uuid()} />
                                 )
                             })}
                         </GridContainer>

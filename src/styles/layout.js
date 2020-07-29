@@ -8,7 +8,7 @@ export const FullWidthWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    padding: 1rem;
+    padding: 0;
     max-width:${props => props.maxWidth ? "100%" : "1200px"};
     margin: 0 auto;
     @media screen and (min-width: 768px){
@@ -32,10 +32,13 @@ export const ProjectItem = styled.div `
     align-items: center;
     color: #fff;
     padding: 3rem;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     :hover {
         background: radial-gradient( rgba(231, 173, 153, .75), rgba(206, 121, 107, 1));
-        transform: scale(1.1);   
+           
+    }
+    :hover>h3 {
+        transform: scale(1.1);
     }
 `;
 

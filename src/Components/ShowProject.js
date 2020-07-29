@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getContentfulProjectPage } from '../queries/index';
 import Layout from '../Layout';
 import RichText from './RichText';
 import { MainBtn, NarrowWrapper } from '../styles/layout';
@@ -7,10 +8,22 @@ import * as headings from '../styles/type';
 
 const ShowProject = (props) => {
 
+    const [data, setData] = useState({});
 
-    if (props.location.project) {
-        console.log(props);
-        const { title, description, thumbnail, technologies, projectLink, gitHubLink } = props.location.project;
+    const getData = async () => {
+        const theData = await getContentfulProjectPage(props.match.params.id);
+        setData(theData);
+    }
+
+    useEffect(() => {
+        getData();
+    })
+    // console.log(data);
+    // console.log(props.match.params.id);
+    if (data.fields) {
+        // console.log(props);
+        
+        const { title, description, thumbnail, technologies, projectImages, challenges, projectLink, gitHubLink, software, images } = data.fields;
         return (
             <div>
                 {/* // Header */}
@@ -37,30 +50,47 @@ const ShowProject = (props) => {
                                 <div key={i} className="tech">{tech}</div>
                             )
                         })}
+
+                        {images && images.map((projectImage,i)=>{
+                            return(
+                                <div key={i} className="projectImage">
+                                    <img src={projectImage.fields.file.url} alt={projectImage.fields.description} />
+                                </div>
+                            )
+                        })}
+
+
                     </FlexCenter>
                 </Layout>
 
                 {/* // Images */}
                 <Layout bg="#ccc">
                     <FlexCenter>
-                        {technologies && technologies.map((tech,i)=>{
+                        {projectImages && projectImages.map((projectImage,i)=>{
                             return(
-                                <div key={i} className="tech">{tech}</div>
+                                <div key={i} className="projectImage">
+                                    <img src={projectImage.fields.file.url} alt={projectImage.fields.description} />
+                                </div>
                             )
                         })}
+
+                        {software && software.map((software,i)=>{
+                            return(
+                                <div key={i} className="software">{software}</div>
+                            )
+                        })}
+                        
                     </FlexCenter>
                 </Layout>
 
                 {/* // Challenges */}
-                <Layout bg="#bbb">
+                {challenges && <Layout bg="#bbb">
                     <FlexCenter>
-                        {technologies && technologies.map((tech,i)=>{
-                            return(
-                                <div key={i} className="tech">{tech}</div>
-                            )
-                        })}
+                        <NarrowWrapper>
+                            <RichText content={challenges} />
+                        </NarrowWrapper>
                     </FlexCenter>
-                </Layout>
+                </Layout>}
 
                 {/* // Links */}
                 <Layout bg="#aaa">

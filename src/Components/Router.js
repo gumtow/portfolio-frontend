@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route, Switch} from "react-router-dom";
 import App from '../App';
 import ShowProject from '../Components/ShowProject';
 
@@ -9,8 +9,10 @@ class UserRouter extends React.Component {
 		return (
             <div>
                 <BrowserRouter>
-                    <Route path="/" exact component={App} />
-                    <Route path="/ShowProject/:id" component={ShowProject} />
+                    <Switch>
+                        <Route exact path="/" component={App} />
+                        <Route exact path="/ShowProject/:id" component={ShowProject} />
+                    </Switch>
                 </BrowserRouter>
             </div>
 		);

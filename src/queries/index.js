@@ -14,3 +14,8 @@ export const getContentfulHomePage = async () => {
     const data = await contentfulClient.getEntry({ entryId:'2IUGKYFF5r1KpHzfES62xf', include: 3 });
     return data;
 }
+
+export const getContentfulProjectPage = async (id) => {
+    const data = await contentfulClient.getEntry( id );
+    return data;
+}
