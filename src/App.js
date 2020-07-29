@@ -4,6 +4,7 @@ import './App.css';
 // import RichText from './Components/RichText';
 import { getContentfulSiteInfo } from './queries/index';
 import HomePage from './Components/HomePage'
+import Footer from './Components/Footer';
 // import * as headings from './styles/type';
 // import { MainBtn, FlexCenter, ProfileImage } from './styles/layout';
 
@@ -26,6 +27,7 @@ function App() {
     return (
       <div>
         <HomePage siteInfo={data.fields} />
+        <Footer siteInfo={data.fields}/>
       </div>
 
         

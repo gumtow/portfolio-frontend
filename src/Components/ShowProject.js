@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getContentfulHomePage } from '../queries/index';
 import Layout from '../Layout';
+import Footer from './Footer';
 import RichText from './RichText';
 import { uuid } from 'uuidv4';
 import { MainBtn, NarrowWrapper } from '../styles/layout';
@@ -7,6 +9,7 @@ import { FlexCenter } from '../styles/layout';
 import * as headings from '../styles/type';
 
 const ShowProject = (props) => {
+
 
     if (props.location.project) {
         console.log(props);

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getContentfulHomePage } from '../queries/index';
+
 import Layout from '../Layout';
 import RichText from './RichText';
 import ProjectThumbnails from './ProjectThumbnail';
@@ -115,19 +116,6 @@ const HomePage = (props) => {
 
                     </Layout>
 
-                    {/* Footer */}
-                    <Layout bg="#293241">
-                        <FlexCenter>
-                            <a target="_blank" rel="noopener noreferrer" href={`mailto:${siteInfo.email}`}><MainBtn>Get in touch</MainBtn></a>
-                        </FlexCenter>
-
-                        <FlexCenter>
-                            <headings.InfoLinks>
-                                <a target="_blank" rel="noopener noreferrer" href={siteInfo.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.medium}>Medium</a>
-                            </headings.InfoLinks>
-                        </FlexCenter>
-
-                    </Layout>
                 </main>
             )
         }
