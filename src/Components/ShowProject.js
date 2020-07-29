@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { getContentfulHomePage } from '../queries/index';
+import React from 'react';
 import Layout from '../Layout';
-import Footer from './Footer';
 import RichText from './RichText';
-import { uuid } from 'uuidv4';
 import { MainBtn, NarrowWrapper } from '../styles/layout';
 import { FlexCenter } from '../styles/layout';
 import * as headings from '../styles/type';
@@ -13,7 +10,7 @@ const ShowProject = (props) => {
 
     if (props.location.project) {
         console.log(props);
-        const { title, description, thumbnail, technologies, challenges, projectLink, gitHubLink } = props.location.project;
+        const { title, description, thumbnail, technologies, projectLink, gitHubLink } = props.location.project;
         return (
             <div>
                 {/* // Header */}
