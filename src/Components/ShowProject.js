@@ -17,7 +17,7 @@ const ShowProject = (props) => {
 
     useEffect(() => {
         getData();
-    })
+    }, [])
     // console.log(data);
     // console.log(props.match.params.id);
     if (data.fields) {
