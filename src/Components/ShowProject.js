@@ -17,7 +17,6 @@ const ShowProject = (props) => {
 
     useEffect(() => {
         getData();
-        // eslint-disable-next-line
     }, []);
     // console.log(data);
     // console.log(props.match.params.id);
