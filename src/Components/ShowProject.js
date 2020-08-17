@@ -9,15 +9,17 @@ import * as headings from '../styles/type';
 const ShowProject = (props) => {
 
     const [data, setData] = useState({});
-
+    
     const getData = async () => {
         const theData = await getContentfulProjectPage(props.match.params.id);
-        setData(theData);
+        return setData(theData);
     }
+    
 
     useEffect(() => {
+
         getData();
-    }, []);
+    });
     // console.log(data);
     // console.log(props.match.params.id);
     if (data.fields) {
