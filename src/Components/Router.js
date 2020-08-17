@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import App from '../App';
 import ShowProject from '../Components/ShowProject';
-import Footer from './Components/Footer';
+import Footer from '../Components/Footer';
 
 class UserRouter extends React.Component {
         
