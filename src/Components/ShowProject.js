@@ -45,7 +45,7 @@ const ShowProject = (props) => {
                 </Layout>
 
                  {/* // Tech Used */}
-                 <Layout bg="#ddd">
+                 <Layout bg="#eee">
                     <FlexCenter>
                         {technologies && technologies.map((tech,i)=>{
                             return(
@@ -66,7 +66,7 @@ const ShowProject = (props) => {
                 </Layout>
 
                 {/* // Images */}
-                <Layout bg="#ccc">
+                <Layout bg="#eee">
                     <FlexCenter>
                         {projectImages && projectImages.map((projectImage,i)=>{
                             return(
@@ -86,7 +86,7 @@ const ShowProject = (props) => {
                 </Layout>
 
                 {/* // Challenges */}
-                {challenges && <Layout bg="#bbb">
+                {challenges && <Layout bg="#eee">
                     <FlexCenter>
                         <NarrowWrapper>
                             <RichText content={challenges} />
@@ -95,7 +95,7 @@ const ShowProject = (props) => {
                 </Layout>}
 
                 {/* // Links */}
-                <Layout bg="#aaa">
+                <Layout bg="#eee">
                     <FlexCenter>
                     <a target="_blank" rel="noopener noreferrer" href={projectLink}><MainBtn>View Project</MainBtn></a>
                     <a target="_blank" rel="noopener noreferrer" href={gitHubLink}><MainBtn>View Code</MainBtn></a>

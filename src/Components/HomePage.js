@@ -68,9 +68,9 @@ const HomePage = (props) => {
                     </Layout>
 
                     {/* Dev Projects */}
-                    <Layout bg="#333">
+                    <Layout bg="#eee">
 
-                        <headings.HeaderTwo>
+                        <headings.HeaderTwo color="true">
                             {data.fields.contentSection[2].fields.title}
                         </headings.HeaderTwo>
 
@@ -86,8 +86,8 @@ const HomePage = (props) => {
                     </Layout>
 
                     {/* Design Projects */}
-                    <Layout bg="#222">
-                        <headings.HeaderTwo>
+                    <Layout bg="#eee">
+                        <headings.HeaderTwo color="true">
                             {data.fields.contentSection[3].fields.title}
                         </headings.HeaderTwo>
 
@@ -103,7 +103,7 @@ const HomePage = (props) => {
                     </Layout>
 
                     {/* More About Me */}
-                    <Layout bg="#111">
+                    <Layout bg="#eee">
                         <headings.HeaderTwo color="true">
                             {data.fields.contentSection[4].fields.title}
                         </headings.HeaderTwo>
