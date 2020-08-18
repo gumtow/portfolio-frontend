@@ -9,6 +9,7 @@ import * as headings from '../styles/type';
 import { MainBtn, FlexCenter, ProfileImage, GridContainer, NarrowWrapper } from '../styles/layout';
 
 import { uuid } from 'uuidv4';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HomePage = (props) => {
     const [data, setData] = useState({});
@@ -49,7 +50,7 @@ const HomePage = (props) => {
 
                         <FlexCenter>
                             <headings.InfoLinks>
-                                <a target="_blank" rel="noopener noreferrer" href={siteInfo.gitHub}>GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.linkedIn}>LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.medium}>Medium</a>
+                                <a target="_blank" rel="noopener noreferrer" href={siteInfo.gitHub}><FontAwesomeIcon icon={["fab", "github"]} /> GitHub</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.linkedIn}><FontAwesomeIcon icon={["fab", "linkedin"]} /> LinkedIn</a> | <a target="_blank" rel="noopener noreferrer" href={siteInfo.medium}><FontAwesomeIcon icon={["fab", "medium"]} /> Medium</a>
                             </headings.InfoLinks>
                         </FlexCenter>
                     </Layout>

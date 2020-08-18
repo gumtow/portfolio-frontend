@@ -5,6 +5,9 @@ import RichText from './RichText';
 import { MainBtn, NarrowWrapper } from '../styles/layout';
 import { FlexCenter } from '../styles/layout';
 import * as headings from '../styles/type';
+// import FontAwesome from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const ShowProject = (props) => {
 
@@ -41,6 +44,9 @@ const ShowProject = (props) => {
                 <Layout bg="#eee">
                     <NarrowWrapper>
                         {description && <RichText content={description} />}
+                        {/* <FontAwesome name="medium" /> */}
+                        <FontAwesomeIcon icon="coffee" />
+                        <FontAwesomeIcon icon={["fab", "linkedin"]} />
                     </NarrowWrapper>
                 </Layout>
 

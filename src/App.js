@@ -5,11 +5,15 @@ import './App.css';
 import { getContentfulSiteInfo } from './queries/index';
 import HomePage from './Components/HomePage'
 import Footer from './Components/Footer';
-import { BrowserRouter, Route, Switch} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ShowProject from './Components/ShowProject';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import * as headings from './styles/type';
 // import { MainBtn, FlexCenter, ProfileImage } from './styles/layout';
 
+library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
 
@@ -29,17 +33,16 @@ function App() {
     return (
       <div>
         <BrowserRouter>
-                    <Switch>
-                        <Route exact path="/" component={() => <HomePage siteInfo={data.fields}/>} />
-                        <Route exact path="/ShowProject/:id" component={ShowProject} />
-                    </Switch>
-                    <Footer siteInfo={data.fields}/>
-                </BrowserRouter>
-        {/* <HomePage siteInfo={data.fields} /> */}
-        
+          <Switch>
+            <Route exact path="/" component={() => <HomePage siteInfo={data.fields} />} />
+            <Route exact path="/ShowProject/:id" component={ShowProject} />
+          </Switch>
+          <Footer siteInfo={data.fields} />
+        </BrowserRouter>
+
       </div>
 
-        
+
     )
   }
 
