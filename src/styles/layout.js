@@ -4,7 +4,11 @@ export const FullWidthWrapper = styled.div`
     padding: 0rem ;
     margin: 0 auto;
     background: ${props => props.bg};
-    background-size:cover;
+    min-height: ${props => props.minHeight ? "850px" : "auto"};
+    background-color: #282c34;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 `;
 
 export const Wrapper = styled.div`
