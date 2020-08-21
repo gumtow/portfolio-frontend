@@ -26,13 +26,15 @@ export const HeaderTwo = styled.h2`
     display:flex;
     justify-content: center;
     align-items:"center";
-    margin: 0.25rem 0rem 3.5rem;
+    margin: 0;
+    padding: 2rem 0;
     font-size: ${props => props.larger ? "2rem" : "1.5rem"};
     color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     background:none;
     @media screen and (min-width: 768px){
         font-size: ${props => props.larger ? "2rem" : "2.5rem"};
         color:${props => props.color ? "#EE6C4D" : "#ffffff"};
+        margin: 0.25rem 0rem 3.5rem;
     }
 `;
 

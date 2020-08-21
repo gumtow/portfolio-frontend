@@ -51,7 +51,10 @@ export const ProjectItem = styled.div `
 
 export const GridContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 0.75fr;
     gap: 1rem;
     @media screen and (min-width: 768px){
         grid-template-columns: 1fr 1fr 1fr 1fr;
