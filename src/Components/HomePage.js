@@ -109,7 +109,7 @@ const HomePage = (props) => {
                             {data.fields.contentSection[4].fields.title}
                         </headings.HeaderTwo>
                         <NarrowWrapper>
-                            {data.fields.contentSection[4].fields.mainTextContent && <RichText content={data.fields.contentSection[1].fields.mainTextContent} />}
+                            {data.fields.contentSection[4].fields.mainTextContent && <RichText content={data.fields.contentSection[4].fields.mainTextContent} class="moreAbout"/>}
                         </NarrowWrapper>
                         <FlexCenter>
                             <a target="_blank" rel="noopener noreferrer" href={`${siteInfo.linkedIn}`}><MainBtn>See a full list of skills</MainBtn></a>

@@ -26,4 +26,24 @@ p{
   line-height: 2rem;
   color: #ffffff;
   margin:0;
+
+}
+
+.tech{
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.25rem;;
+}
+
+.overview, .challenges {
+  padding: 0 6rem;
+  text-align: justify;
+  
+}
+
+.moreAbout{
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid #fff;
+
 }
