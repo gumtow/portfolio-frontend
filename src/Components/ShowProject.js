@@ -44,15 +44,13 @@ const ShowProject = (props) => {
                 <Layout bg="#eee">
                     <NarrowWrapper>
                         {description && <RichText content={description} />}
-                        {/* <FontAwesome name="medium" /> */}
-                        <FontAwesomeIcon icon="coffee" />
-                        <FontAwesomeIcon icon={["fab", "linkedin"]} />
                     </NarrowWrapper>
                 </Layout>
 
                  {/* // Tech Used */}
                  <Layout bg="#eee">
                     <FlexCenter>
+
                         {technologies && technologies.map((tech,i)=>{
                             return(
                                 <div key={i} className="tech">{tech}</div>

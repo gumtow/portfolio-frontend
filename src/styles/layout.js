@@ -6,7 +6,7 @@ export const FullWidthWrapper = styled.div`
     background: ${props => props.bg};
     min-height: ${props => props.minHeight ? "850px" : "auto"};
     background-color: #282c34;
-    background-size:contain;
+    background-size: ${props => props.bgSize ? props.bgSize : "cover"};
     background-repeat: no-repeat;
     background-position: center top;
 `;
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
     max-width:${props => props.maxWidth ? "100%" : "1200px"};
     margin: 0 auto;
     @media screen and (min-width: 768px){
-        padding: ${props => props.maxWidth ? "0" : "8rem"};
+        padding: ${props => props.maxWidth ? "0" : "4rem"};
     }
 `;
 
@@ -30,7 +30,7 @@ export const NarrowWrapper = styled.div`
 
 export const ProjectItem = styled.div `
     background: radial-gradient( rgba(73, 88, 103, .5), rgba(193, 140, 93, .75));
-    height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
