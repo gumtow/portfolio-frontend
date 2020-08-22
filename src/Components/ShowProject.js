@@ -6,7 +6,7 @@ import { MainBtn, NarrowWrapper } from '../styles/layout';
 import { FlexCenter } from '../styles/layout';
 import * as headings from '../styles/type';
 // import FontAwesome from 'react-fontawesome';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const ShowProject = (props) => {
