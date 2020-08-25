@@ -4,7 +4,7 @@ export const FullWidthWrapper = styled.div`
     padding: 0rem ;
     margin: 0 auto;
     background: ${props => props.bg};
-    min-height: ${props => props.minHeight ? props.minHeight : "auto"};
+    
     background-color: #282c34;
     background-size: ${props => props.bgSize ? props.bgSize : "cover"};
     background-repeat: no-repeat;
@@ -13,7 +13,12 @@ export const FullWidthWrapper = styled.div`
 
 export const Wrapper = styled.div`
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
     max-width:${props => props.maxWidth ? "100%" : "1200px"};
+    min-height: ${props => props.minHeight ? props.minHeight : "auto"};
     margin: 0 auto;
     @media screen and (min-width: 768px){
         padding: ${props => props.maxWidth ? "0" : "4rem"};
@@ -36,7 +41,10 @@ export const ProjectItem = styled.div `
     align-items: center;
     color: #fff;
     padding: 3rem;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    h3 {
+        transition: all 0.5s;
+    }
     :hover {
         background: radial-gradient( rgba(231, 173, 153, .75), rgba(206, 121, 107, 1));
            

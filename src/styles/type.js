@@ -3,7 +3,8 @@ import styled from 'styled-components';
 // Headings
 
 export const HeaderOne = styled.h1`
-    font-family: azo-sans-web,sans-serif;
+    // font-family: azo-sans-web,sans-serif;
+    font-family: 'Source Serif Pro', serif;
     font-weight: 500;
     font-style: normal;
     display:flex;
@@ -12,7 +13,7 @@ export const HeaderOne = styled.h1`
     margin-bottom: 0.25rem;
     color:#EE6C4D;
     font-size: 2rem;
-    text-transform:uppercase;
+    // text-transform:uppercase;
     text-align:center;
     @media screen and (min-width: 768px){
         font-size: 4rem;
