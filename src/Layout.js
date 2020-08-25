@@ -4,7 +4,7 @@ import { Wrapper } from './styles/layout';
 
 const Layout = (props) => {
     return(
-        <FullWidthWrapper bg={props.bg} bgSize={props.bgSize}>
+        <FullWidthWrapper bg={props.bg} bgSize={props.bgSize} minHeight={props.minHeight}>
             <Wrapper maxWidth={props.maxWidth}>
                 {props.children}
             </Wrapper>

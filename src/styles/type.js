@@ -8,11 +8,12 @@ export const HeaderOne = styled.h1`
     font-style: normal;
     display:flex;
     justify-content: center;
-    align-items:"center";
+    align-items:center;
     margin-bottom: 0.25rem;
     color:#EE6C4D;
     font-size: 2rem;
     text-transform:uppercase;
+    text-align:center;
     @media screen and (min-width: 768px){
         font-size: 4rem;
     }

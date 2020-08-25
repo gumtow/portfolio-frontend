@@ -4,7 +4,7 @@ export const FullWidthWrapper = styled.div`
     padding: 0rem ;
     margin: 0 auto;
     background: ${props => props.bg};
-    min-height: ${props => props.minHeight ? "850px" : "auto"};
+    min-height: ${props => props.minHeight ? props.minHeight : "auto"};
     background-color: #282c34;
     background-size: ${props => props.bgSize ? props.bgSize : "cover"};
     background-repeat: no-repeat;
@@ -138,6 +138,20 @@ export const ProfileImage = styled.img`
     @media screen and (min-width: 768px){
         max-width:50px;
         max-height: 50px;
+    }
+`;
+
+// Project image
+
+export const ProjImage = styled.div`
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis:50%;
+    flex-direction: ${props => props.flexDirection};
+    img{
+        max-width:50%;
+        margin:3rem;
     }
 `;
 

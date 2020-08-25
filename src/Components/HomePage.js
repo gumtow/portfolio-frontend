@@ -30,7 +30,7 @@ const HomePage = (props) => {
             return (
                 <main>
                     {/* HEADER */}
-                    <Layout minHeight  bg={`url(${data.fields.contentSection[0].fields.backgroundImage.fields.file.url})`} bgSize="contain">
+                    <Layout minHeight="850px"  bg={`url(${data.fields.contentSection[0].fields.backgroundImage.fields.file.url})`} bgSize="contain">
 
                         <FlexCenter>
                             <ProfileImage src={siteInfo.profileImage.fields.file.url} alt={siteInfo.profileImage.fields.title} />
