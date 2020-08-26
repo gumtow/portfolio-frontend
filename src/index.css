@@ -44,6 +44,18 @@ p{
 .moreAbout{
   column-count: 2;
   column-gap: 4rem;
-  column-rule: 1px solid #fff;
+  column-rule: 1px solid rgb(54, 64, 77);
 
+}
+
+@media screen and (max-width: 768px){
+  p{
+    font-size: 1.25rem;
+    padding: 0 2rem;
+  }
+  .moreAbout{
+    column-count: 1;
+  
+  }
+  
 }

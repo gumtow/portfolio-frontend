@@ -16,11 +16,13 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction:column;
+    position:relative;
     max-width:${props => props.maxWidth ? "100%" : "1200px"};
-    min-height: ${props => props.minHeight ? props.minHeight : "auto"};
+    min-height: ${props => props.minHeight ? "650px" : "auto"};
     margin: 0 auto;
     @media screen and (min-width: 768px){
         padding: ${props => props.maxWidth ? "0" : "4rem"};
+        min-height: ${props => props.minHeight ? props.minHeight : "auto"};
     }
 `;
 
@@ -33,19 +35,28 @@ export const NarrowWrapper = styled.div`
 `;
 
 export const ProjectItem = styled.div `
-    background: radial-gradient( rgba(73, 88, 103, .5), rgba(193, 140, 93, .75));
+    // background: radial-gradient( rgba(73, 88, 103, .5), rgba(193, 140, 93, .75));
+    background: rgba(40, 44, 52, 0);
+    // position:absolute;
+    //     top:0;
+    //     left:0;
     min-height: 100%;
+    min-width:100%
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     padding: 3rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    div{
+        
+    }
     h3 {
         transition: all 0.5s;
+        // padding:3rem;
     }
     :hover {
-        background: radial-gradient( rgba(231, 173, 153, .75), rgba(206, 121, 107, 1));
+        background: rgba(40, 44, 52, 0.75);
            
     }
     :hover>h3 {

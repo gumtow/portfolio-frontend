@@ -12,7 +12,7 @@ export const HeaderOne = styled.h1`
     align-items:center;
     margin-bottom: 0.25rem;
     color:#EE6C4D;
-    font-size: 2rem;
+    font-size: 3rem;
     // text-transform:uppercase;
     text-align:center;
     @media screen and (min-width: 768px){
@@ -30,7 +30,7 @@ export const HeaderTwo = styled.h2`
     align-items:"center";
     margin: 0;
     padding: 2rem 0;
-    font-size: ${props => props.larger ? "2rem" : "1.5rem"};
+    font-size: ${props => props.larger ? "1.5rem" : "1.75rem"};
     color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     background:none;
     text-align:center;
