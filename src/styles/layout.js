@@ -4,7 +4,6 @@ export const FullWidthWrapper = styled.div`
     padding: 0rem ;
     margin: 0 auto;
     background: ${props => props.bg};
-    
     background-color: #282c34;
     background-size: ${props => props.bgSize ? props.bgSize : "cover"};
     background-repeat: no-repeat;

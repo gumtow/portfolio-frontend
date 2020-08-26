@@ -33,6 +33,7 @@ export const HeaderTwo = styled.h2`
     font-size: ${props => props.larger ? "2rem" : "1.5rem"};
     color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     background:none;
+    text-align:center;
     @media screen and (min-width: 768px){
         font-size: ${props => props.larger ? "2rem" : "2.5rem"};
         color:${props => props.color ? "#EE6C4D" : "#ffffff"};
