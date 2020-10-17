@@ -3,16 +3,26 @@ import styled from 'styled-components';
 // Headings
 
 export const HeaderOne = styled.h1`
+<<<<<<< HEAD
     font-family: 'Playfair Display', serif;
     // font-family: azo-sans-web,sans-serif;
     font-weight: 200;
+=======
+    // font-family: azo-sans-web,sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 500;
+>>>>>>> bb34151442195f56e59fd36b49b0290ca92e52ca
     font-style: normal;
     display:flex;
     justify-content: center;
     align-items:center;
     margin-bottom: 0.25rem;
     color:#EE6C4D;
+<<<<<<< HEAD
     font-size: 2rem;
+=======
+    font-size: 3rem;
+>>>>>>> bb34151442195f56e59fd36b49b0290ca92e52ca
     // text-transform:uppercase;
     text-align:center;
     @media screen and (min-width: 768px){
@@ -30,9 +40,10 @@ export const HeaderTwo = styled.h2`
     align-items:"center";
     margin: 0;
     padding: 2rem 0;
-    font-size: ${props => props.larger ? "2rem" : "1.5rem"};
+    font-size: ${props => props.larger ? "1.5rem" : "1.75rem"};
     color:${props => props.color ? "#EE6C4D" : "#ffffff"};
     background:none;
+    text-align:center;
     @media screen and (min-width: 768px){
         font-size: ${props => props.larger ? "2rem" : "2.5rem"};
         color:${props => props.color ? "#EE6C4D" : "#ffffff"};

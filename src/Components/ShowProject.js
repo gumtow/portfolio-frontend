@@ -35,7 +35,7 @@ const ShowProject = (props) => {
             return (
                 <div>
                     {/* // Header */}
-                    <Layout bg={`url(${headerBg.fields.file.url})`}>
+                    <Layout bgSize="contain" bg={`url(${headerBg.fields.file.url})`} minHeight="500px">
                         <headings.HeaderOne>{title}</headings.HeaderOne>
                         <FlexCenter>
                             <a target="_blank" rel="noopener noreferrer" href={projectLink}><MainBtn>View Project</MainBtn></a>

@@ -18,6 +18,17 @@ a {
   color:#fff;
 }
 
+<<<<<<< HEAD
+=======
+p{
+  font-family: ff-tisa-web-pro,serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #ffffff;
+  margin:0;
+>>>>>>> bb34151442195f56e59fd36b49b0290ca92e52ca
 
 
 .tech{
@@ -35,6 +46,18 @@ a {
 .moreAbout{
   column-count: 2;
   column-gap: 4rem;
-  column-rule: 1px solid #fff;
+  column-rule: 1px solid rgb(54, 64, 77);
 
+}
+
+@media screen and (max-width: 768px){
+  p{
+    font-size: 1.25rem;
+    padding: 0 2rem;
+  }
+  .moreAbout{
+    column-count: 1;
+  
+  }
+  
 }

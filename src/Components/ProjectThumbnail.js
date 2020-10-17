@@ -14,7 +14,7 @@ const ProjectThumbnails = (props) => {
             }}>
                 <Layout bg={`url(${props.project.fields.thumbnail.fields.file.url})`}   maxWidth="true">
                     <ProjectItem>
-                        <h3>{props.project.fields.title}</h3>
+                            <h3>{props.project.fields.title}</h3>
                     </ProjectItem>
                 </Layout>
             </Link>
