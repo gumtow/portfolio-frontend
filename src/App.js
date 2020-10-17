@@ -4,7 +4,7 @@ import './App.css';
 // import RichText from './Components/RichText';
 import { getContentfulSiteInfo } from './queries/index';
 import HomePage from './Components/Home'
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ShowProject from './Components/ShowProject';
 import { library } from '@fortawesome/fontawesome-svg-core'

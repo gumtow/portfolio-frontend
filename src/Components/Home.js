@@ -94,7 +94,7 @@ const HomePage = (props) => {
                   src={
                     data.fields.contentSection[0].fields.headerImage.fields.file
                       .url
-                  }
+                  } alt="placeholder"
                 />
               </Col>
             </Row>
@@ -107,7 +107,7 @@ const HomePage = (props) => {
           <Container>
             <Row>
               <Col sm={{ span: 4, offset: 1 }}>
-                <img src={siteInfo.profileImage.fields.file.url} />
+                <img src={siteInfo.profileImage.fields.file.url} alt="placeholder" />
               </Col>
               <Col sm={{ span: 5, offset: 1 }}>
                 <Row>
@@ -143,7 +143,7 @@ const HomePage = (props) => {
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
                       .url
-                  }
+                  } alt="placeholder"
                 />
               </Col>
               <Col data-aos="fade-left" sm={{ span: 5, offset: 1 }}>
@@ -177,7 +177,7 @@ const HomePage = (props) => {
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
                       .url
-                  }
+                  }  alt="placeholder"
                 />
               </Col>
               <Col  data-aos="fade-right" sm={{ span: 5, offset: 1, order: 1 }}>
@@ -211,7 +211,7 @@ const HomePage = (props) => {
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
                       .url
-                  }
+                  }  alt="placeholder"
                 />
               </Col>
               <Col data-aos="fade-left" sm={{ span: 5, offset: 1 }}>
@@ -245,7 +245,7 @@ const HomePage = (props) => {
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
                       .url
-                  }
+                  } alt="placeholder"
                 />
               </Col>
               <Col  data-aos="fade-right" sm={{ span: 5, offset: 1, order: 1 }}>
