@@ -3,7 +3,7 @@ import './App.css';
 // import Layout from './Layout';
 // import RichText from './Components/RichText';
 import { getContentfulSiteInfo } from './queries/index';
-import HomePage from './Components/HomePage'
+import HomePage from './Components/Home'
 import Footer from './Components/Footer';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ShowProject from './Components/ShowProject';
@@ -37,7 +37,7 @@ function App() {
             <Route exact path="/" component={() => <HomePage siteInfo={data.fields} />} />
             <Route exact path="/ShowProject/:id" component={ShowProject} />
           </Switch>
-          <Footer siteInfo={data.fields} />
+          {/* <Footer siteInfo={data.fields} /> */}
         </BrowserRouter>
 
       </div>

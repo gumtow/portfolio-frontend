@@ -4,6 +4,9 @@ import './index.css';
 import App from './App'
 import * as serviceWorker from './serviceWorker';
 
+// Importing Sass with Bootstrap CSS
+import './App.scss';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

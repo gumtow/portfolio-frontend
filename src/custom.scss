@@ -1,0 +1,144 @@
+/* make the customizations */
+$theme-colors: (
+        "primary": #02c39a,
+        "teal": #028090,
+        "secondary": #05668D,
+        "sub": #f0f3bd,
+        "text": #444444
+);
+
+$border-radius: 10rem;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin:0;
+    color: var(--text);
+  
+  }
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.5rem;
+    p {
+        color:var(--secondary);
+    }
+    
+}
+
+.align-left{
+    padding-left: 0!important;
+}
+
+.hero{
+    text-align:left;
+    padding: 7rem 0 0;
+    h1{
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--teal);
+    }
+}
+
+
+.about{
+    h2{
+        color:#ffffff;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    p{
+        color:#ffffff;
+        padding: 2rem 0 0;
+        line-height: 1.5rem;
+    }
+}
+
+.work{
+    h2{
+        color:#ffffff;
+        font-weight: 700;
+        font-size: 3rem;
+        padding: 0 0 2rem;
+    }
+}
+
+
+.container {
+    padding: 2rem 15px;
+}
+
+.footer {
+    position: relative;
+}
+
+
+.footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    background: url("//images.ctfassets.net/hox9v6swb28k/7yjS5m9c1VJEO3oHZJ2Nu1/aceed21f80037c29e9bb70fe879531ce/footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    @media screen and (min-width: 992px){
+        height: 836px;
+    }
+    @media screen and (min-width: 768px){
+        height: 600px;
+    }
+
+}
+
+.header {
+    position: relative;
+}
+
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 25vw;
+    height: 100%;
+    background: url("//images.ctfassets.net/hox9v6swb28k/6J2FAotAAhFRwmOhFSHCEN/25eac48e731bde28e9a4983239d289ad/header.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+
+}
+
+.about {
+    position: relative;
+}
+
+
+.about::after {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left:0;
+    width: 100vw;
+    height: 1494px;
+    background: url("//images.ctfassets.net/hox9v6swb28k/6U38hS5dorjm1b4GrEvrQ1/576de12e6d042ea886ce84e4c971da15/about.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+
+}
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";
