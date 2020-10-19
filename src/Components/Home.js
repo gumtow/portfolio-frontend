@@ -49,7 +49,7 @@ const HomePage = (props) => {
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 200, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
+    duration: 450, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
@@ -137,7 +137,7 @@ const HomePage = (props) => {
 
             {/* FIRST PROJECT */}  
 
-            <Row>
+            <Row className="project">
               <Col data-aos="fade-right" sm={{ span: 4, offset: 1 }}>
                 <img
                   src={
@@ -171,7 +171,7 @@ const HomePage = (props) => {
 
             {/* SECOND PROJECT */}
 
-            <Row>
+            <Row className="project">
               <Col data-aos="fade-left" sm={{ span: 4, offset: 1, order: 2 }}>
                 <img
                   src={
@@ -205,7 +205,7 @@ const HomePage = (props) => {
 
             {/* THIRD PROJECT */}  
 
-            <Row>
+            <Row className="project">
               <Col data-aos="fade-right" sm={{ span: 4, offset: 1 }}>
                 <img
                   src={
@@ -239,7 +239,7 @@ const HomePage = (props) => {
 
             {/* FOURTH PROJECT */}
 
-            <Row>
+            <Row className="project">
               <Col data-aos="fade-left" sm={{ span: 4, offset: 1, order: 2 }}>
                 <img
                   src={
