@@ -70,7 +70,7 @@ const HomePage = (props) => {
               <p>Navigation Items</p>
             </Nav>
             <Row className="hero">
-              <Col sm={4} className="align-items-center">
+              <Col lg={4} className="align-items-center">
                 <Row>
                   <h1>Hello,</h1>
                 </Row>
@@ -89,7 +89,7 @@ const HomePage = (props) => {
                   </Col>
                 </Row>
               </Col>
-              <Col sm={8} className="align-items-center">
+              <Col lg={8} className="align-items-center">
                 <img
                   src={
                     data.fields.contentSection[0].fields.headerImage.fields.file
@@ -106,10 +106,10 @@ const HomePage = (props) => {
         <Container fluid className="about">
           <Container>
             <Row>
-              <Col sm={{ span: 4, offset: 1 }}>
+              <Col md={{ span: 4, offset: 1 }}>
                 <img src={siteInfo.profileImage.fields.file.url} alt="placeholder" />
               </Col>
-              <Col sm={{ span: 5, offset: 1 }}>
+              <Col md={{ span: 5, offset: 1 }}>
                 <Row>
                   <h2>About Me</h2>
                 </Row>
@@ -138,7 +138,7 @@ const HomePage = (props) => {
             {/* FIRST PROJECT */}  
 
             <Row className="project">
-              <Col data-aos="fade-right" sm={{ span: 4, offset: 1 }}>
+              <Col data-aos="fade-right" md={{ span: 4, offset: 1 }}>
                 <img
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
@@ -146,7 +146,7 @@ const HomePage = (props) => {
                   } alt="placeholder"
                 />
               </Col>
-              <Col data-aos="fade-left" sm={{ span: 5, offset: 1 }}>
+              <Col data-aos="fade-left" md={{ span: 5, offset: 1 }}>
                 <Row>
                   <h3>Project Title</h3>
                 </Row>
@@ -160,10 +160,10 @@ const HomePage = (props) => {
                 </Row>
                 <Row>
                   <Col>
-                    <Button variant="secondary">View Project</Button>
+                    <Button variant="secondary" block>View Project</Button>
                   </Col>
                   <Col>
-                    <Button variant="secondary">View Code</Button>
+                    <Button variant="secondary" block>View Code</Button>
                   </Col>
                 </Row>
               </Col>
@@ -172,7 +172,7 @@ const HomePage = (props) => {
             {/* SECOND PROJECT */}
 
             <Row className="project">
-              <Col data-aos="fade-left" sm={{ span: 4, offset: 1, order: 2 }}>
+              <Col data-aos="fade-left" md={{ span: 4, offset: 1, order: 2 }}>
                 <img
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
@@ -180,7 +180,7 @@ const HomePage = (props) => {
                   }  alt="placeholder"
                 />
               </Col>
-              <Col  data-aos="fade-right" sm={{ span: 5, offset: 1, order: 1 }}>
+              <Col  data-aos="fade-right" md={{ span: 5, offset: 1, order: 1 }}>
                 <Row>
                   <h3>Project Title</h3>
                 </Row>
@@ -194,10 +194,10 @@ const HomePage = (props) => {
                 </Row>
                 <Row>
                   <Col>
-                    <Button variant="secondary">View Project</Button>
+                    <Button variant="secondary" block>View Project</Button>
                   </Col>
                   <Col>
-                    <Button variant="secondary">View Code</Button>
+                    <Button variant="secondary" block>View Code</Button>
                   </Col>
                 </Row>
               </Col>
@@ -206,7 +206,7 @@ const HomePage = (props) => {
             {/* THIRD PROJECT */}  
 
             <Row className="project">
-              <Col data-aos="fade-right" sm={{ span: 4, offset: 1 }}>
+              <Col data-aos="fade-right" md={{ span: 4, offset: 1 }}>
                 <img
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
@@ -214,7 +214,7 @@ const HomePage = (props) => {
                   }  alt="placeholder"
                 />
               </Col>
-              <Col data-aos="fade-left" sm={{ span: 5, offset: 1 }}>
+              <Col data-aos="fade-left" md={{ span: 5, offset: 1 }}>
                 <Row>
                   <h3>Project Title</h3>
                 </Row>
@@ -228,10 +228,10 @@ const HomePage = (props) => {
                 </Row>
                 <Row>
                   <Col>
-                    <Button variant="secondary">View Project</Button>
+                    <Button variant="secondary" block>View Project</Button>
                   </Col>
                   <Col>
-                    <Button variant="secondary">View Code</Button>
+                    <Button variant="secondary" block>View Code</Button>
                   </Col>
                 </Row>
               </Col>
@@ -240,7 +240,7 @@ const HomePage = (props) => {
             {/* FOURTH PROJECT */}
 
             <Row className="project">
-              <Col data-aos="fade-left" sm={{ span: 4, offset: 1, order: 2 }}>
+              <Col data-aos="fade-left" md={{ span: 4, offset: 1, order: 2 }}>
                 <img
                   src={
                     data.fields.contentSection[5].fields.thumbnail.fields.file
@@ -248,7 +248,7 @@ const HomePage = (props) => {
                   } alt="placeholder"
                 />
               </Col>
-              <Col  data-aos="fade-right" sm={{ span: 5, offset: 1, order: 1 }}>
+              <Col  data-aos="fade-right" md={{ span: 5, offset: 1, order: 1 }}>
                 <Row>
                   <h3>Project Title</h3>
                 </Row>
@@ -262,10 +262,10 @@ const HomePage = (props) => {
                 </Row>
                 <Row>
                   <Col>
-                    <Button variant="secondary">View Project</Button>
+                    <Button variant="secondary" block>View Project</Button>
                   </Col>
                   <Col>
-                    <Button variant="secondary">View Code</Button>
+                    <Button variant="secondary" block>View Code</Button>
                   </Col>
                 </Row>
               </Col>
@@ -284,17 +284,20 @@ const HomePage = (props) => {
             </Row>
             <Row>
               <Col>
-                <Button variant="sub">Link</Button>
+                <Button variant="sub" block>Link</Button>
               </Col>
               <Col>
-                <Button variant="sub">Link</Button>
+                <Button variant="sub" block>Link</Button>
               </Col>
               <Col>
-                <Button variant="sub">Link</Button>
+                <Button variant="sub" block>Link</Button>
               </Col>
               <Col>
-                <Button variant="sub">Link</Button>
+                <Button variant="sub" block>Link</Button>
               </Col>
+            </Row>
+            <Row>
+              <p id="disclaimer">Copyright 2020 Jesse Gumtow All Rights Reserved</p>
             </Row>
           </Container>
         </Container>
