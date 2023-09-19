@@ -11,7 +11,7 @@ class UserRouter extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/" component={App} />
-                        <Route exact path="ShowProject/:id" component={ShowProject} />
+                        <Route exact path="/ShowProject/:id" component={ShowProject} />
                     </Switch>
                 </BrowserRouter>
             </div>
